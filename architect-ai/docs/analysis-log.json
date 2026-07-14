@@ -1,0 +1,306 @@
+[
+  {
+    "timestamp": "2026-07-14T07:38:05.044Z",
+    "filePath": "src/services/UserService.ts",
+    "analysis": {
+      "components": [
+        {
+          "name": "UserCard",
+          "props": [
+            "name",
+            "email"
+          ],
+          "purpose": "UserCard UI component"
+        }
+      ],
+      "services": [
+        {
+          "name": "UserService",
+          "responsibility": "Handles User operations"
+        },
+        {
+          "name": "OrderService",
+          "responsibility": "Handles Order operations"
+        }
+      ],
+      "apiRoutes": [
+        {
+          "method": "POST",
+          "path": "src/services/UserService.ts",
+          "description": "POST src/services/UserService.ts"
+        },
+        {
+          "method": "GET",
+          "path": "src/services/UserService.ts",
+          "description": "GET src/services/UserService.ts"
+        }
+      ],
+      "models": [
+        {
+          "name": "User",
+          "relationships": []
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-14T07:36:54.810Z",
+    "filePath": "lib/store.ts",
+    "analysis": {
+      "components": [],
+      "services": [],
+      "apiRoutes": [],
+      "models": [
+        {
+          "name": "AnalysisEntry",
+          "relationships": []
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-14T07:36:54.810Z",
+    "filePath": "lib/analyzer.ts",
+    "analysis": {
+      "components": [],
+      "services": [],
+      "apiRoutes": [],
+      "models": [
+        {
+          "name": "CodeAnalysis",
+          "relationships": []
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-14T07:36:54.810Z",
+    "filePath": "components/Sidebar.tsx",
+    "analysis": {
+      "components": [
+        {
+          "name": "Sidebar",
+          "props": [],
+          "purpose": "Sidebar UI component"
+        }
+      ],
+      "services": [],
+      "apiRoutes": [],
+      "models": []
+    }
+  },
+  {
+    "timestamp": "2026-07-14T07:36:54.810Z",
+    "filePath": "app/page.tsx",
+    "analysis": {
+      "components": [
+        {
+          "name": "UserCard",
+          "props": [
+            "name",
+            "email"
+          ],
+          "purpose": "UserCard UI component"
+        },
+        {
+          "name": "DashboardPage",
+          "props": [],
+          "purpose": "DashboardPage UI component"
+        }
+      ],
+      "services": [
+        {
+          "name": "UserService",
+          "responsibility": "Handles User operations"
+        },
+        {
+          "name": "OrderService",
+          "responsibility": "Handles Order operations"
+        }
+      ],
+      "apiRoutes": [
+        {
+          "method": "POST",
+          "path": "/page.tsx",
+          "description": "POST /page.tsx"
+        },
+        {
+          "method": "GET",
+          "path": "/page.tsx",
+          "description": "GET /page.tsx"
+        }
+      ],
+      "models": [
+        {
+          "name": "DocsData",
+          "relationships": []
+        },
+        {
+          "name": "User",
+          "relationships": []
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-14T07:36:54.810Z",
+    "filePath": "app/layout.tsx",
+    "analysis": {
+      "components": [
+        {
+          "name": "RootLayout",
+          "props": [
+            "children"
+          ],
+          "purpose": "RootLayout UI component"
+        }
+      ],
+      "services": [],
+      "apiRoutes": [],
+      "models": []
+    }
+  },
+  {
+    "timestamp": "2026-07-14T07:36:54.810Z",
+    "filePath": "app/documentation/page.tsx",
+    "analysis": {
+      "components": [
+        {
+          "name": "DocumentationPage",
+          "props": [],
+          "purpose": "DocumentationPage UI component"
+        }
+      ],
+      "services": [],
+      "apiRoutes": [],
+      "models": [
+        {
+          "name": "Docs",
+          "relationships": []
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-14T07:36:54.810Z",
+    "filePath": "app/diagrams/page.tsx",
+    "analysis": {
+      "components": [
+        {
+          "name": "DiagramsPage",
+          "props": [],
+          "purpose": "DiagramsPage UI component"
+        }
+      ],
+      "services": [],
+      "apiRoutes": [],
+      "models": []
+    }
+  },
+  {
+    "timestamp": "2026-07-14T07:36:54.810Z",
+    "filePath": "app/api/analyze/route.ts",
+    "analysis": {
+      "components": [],
+      "services": [],
+      "apiRoutes": [
+        {
+          "method": "POST",
+          "path": "/api/analyze",
+          "description": "POST /api/analyze"
+        },
+        {
+          "method": "PUT",
+          "path": "/api/analyze",
+          "description": "PUT /api/analyze"
+        }
+      ],
+      "models": []
+    }
+  },
+  {
+    "timestamp": "2026-07-14T07:36:54.810Z",
+    "filePath": "app/activity/page.tsx",
+    "analysis": {
+      "components": [
+        {
+          "name": "ActivityPage",
+          "props": [],
+          "purpose": "ActivityPage UI component"
+        }
+      ],
+      "services": [],
+      "apiRoutes": [],
+      "models": [
+        {
+          "name": "HistoryEntry",
+          "relationships": []
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-14T07:36:54.810Z",
+    "filePath": "src/services/UserService.ts",
+    "analysis": {
+      "components": [],
+      "services": [
+        {
+          "name": "UserService",
+          "responsibility": "Handles User operations"
+        }
+      ],
+      "apiRoutes": [],
+      "models": [
+        {
+          "name": "User",
+          "relationships": []
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-14T07:36:54.810Z",
+    "filePath": "src/services/OrderService.ts",
+    "analysis": {
+      "components": [],
+      "services": [
+        {
+          "name": "OrderService",
+          "responsibility": "Handles Order operations"
+        }
+      ],
+      "apiRoutes": [],
+      "models": [
+        {
+          "name": "Order",
+          "relationships": []
+        },
+        {
+          "name": "OrderItem",
+          "relationships": []
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-14T07:36:54.810Z",
+    "filePath": "src/components/UserCard.tsx",
+    "analysis": {
+      "components": [
+        {
+          "name": "UserCard",
+          "props": [
+            "name",
+            "email",
+            "createdAt"
+          ],
+          "purpose": "UserCard UI component"
+        }
+      ],
+      "services": [],
+      "apiRoutes": [],
+      "models": []
+    }
+  }
+]

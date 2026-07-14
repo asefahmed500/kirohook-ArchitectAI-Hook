@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ArchitectAI Hook
+
+> Automatically maintain software documentation, architecture diagrams, API docs, changelogs, and testing recommendations whenever source code changes — powered by Kiro Hooks.
+
+## How It Works
+
+1. **Developer saves a file** in `src/`, `app/`, `components/`, `lib/`, or `services/`
+2. **Kiro Hook triggers** automatically via `PostToolUse` on `fs_write` events
+3. **Code is analyzed** — components, services, API routes, and models are extracted
+4. **Docs are regenerated** and saved to the `docs/` folder
+
+No manual steps required.
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Feature | Output |
+|---|---|
+| Architecture docs | `docs/architecture.md` |
+| API documentation | `docs/api.md` |
+| Mermaid diagrams | `docs/system-diagram.mmd` |
+| Changelog | `docs/changelog.md` |
+| Testing recommendations | `docs/testing.md` |
 
-## Learn More
+## Kiro Hook
 
-To learn more about Next.js, take a look at the following resources:
+The hook lives at `.kiro/hooks/hooks.json` and triggers on every `fs_write` to code files.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To test it manually, click **"Trigger Demo Hook"** or **"Scan Codebase"** on the Dashboard.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Supported Languages
 
-## Deploy on Vercel
+- TypeScript / TSX
+- JavaScript / JSX
+- React / Next.js components
+- Node.js services and API routes
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Tech Stack
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Next.js 16 · React 19 · TypeScript · Tailwind CSS · Mermaid · Zustand

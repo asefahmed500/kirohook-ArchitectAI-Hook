@@ -1,0 +1,27 @@
+graph TD
+
+  User["👤 User"]
+  Frontend["⚛️ Frontend"]
+  API["🔌 API Layer"]
+  User --> Frontend
+  Frontend --> API
+  UserService["⚙️ UserService"]
+  API --> UserService
+  UserService --> Database[("🗄️ Database")]
+  OrderService["⚙️ OrderService"]
+  API --> OrderService
+  OrderService --> Database[("🗄️ Database")]
+  UserCard["🧩 UserCard"]
+  Frontend --> UserCard
+  Sidebar["🧩 Sidebar"]
+  Frontend --> Sidebar
+  DashboardPage["🧩 DashboardPage"]
+  Frontend --> DashboardPage
+  RootLayout["🧩 RootLayout"]
+  Frontend --> RootLayout
+  DocumentationPage["🧩 DocumentationPage"]
+  Frontend --> DocumentationPage
+  DiagramsPage["🧩 DiagramsPage"]
+  Frontend --> DiagramsPage
+  ActivityPage["🧩 ActivityPage"]
+  Frontend --> ActivityPage

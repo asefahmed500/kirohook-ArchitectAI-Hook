@@ -1,0 +1,12 @@
+{
+  "hooks": [
+    {
+      "name": "ArchitectAI Documentation Hook",
+      "description": "Automatically generates and updates architecture docs, API docs, Mermaid diagrams, changelogs, and testing recommendations whenever source code changes.",
+      "event": "postToolUse",
+      "matcher": "fs_write",
+      "command": "node .kiro/hooks/architect-ai-hook.js",
+      "timeout_ms": 10000
+    }
+  ]
+}
